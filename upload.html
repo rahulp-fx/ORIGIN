@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORIGIN | Upload Picture</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="logo">ORIGIN</a>
+    <div class="nav-links">
+      <a href="index.html">Discover</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" id="nav-login-link">Log In</a>
+      <a href="upload.html" class="btn-upload">Create Portfolio</a>
+    </div>
+  </nav>
+
+  <main class="page-container">
+    <div class="upload-container">
+      <h1 class="title">Publish Your Work !</h1>
+      <p>Showcase your best photography in high resolution.</p>
+
+      <form action="#" method="post">
+        <div class="drop-zone">
+          <div class="drop-icon"><img src="assets/icons/upload.png" alt="upload"></div>
+          <div class="drop-text">Drag and drop your photo here</div>
+          <div class="drop-subtext">or click to browse (JPG, PNG up to 20MB)</div>
+          <input type="file" style="display: none;">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Project Title</label>
+          <input type="text" class="form-input" placeholder="e.g. Beach View">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Description / Story</label>
+          <textarea class="form-textarea" placeholder="What is the story behind this shot ?"></textarea>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="ownership" required>
+          <label for="ownership" class="checkbox-text">
+            I certify that I am the original creator of this image and I own the rights to publish it on ORIGIN.
+          </label>
+        </div>
+
+        <button type="submit" class="btn-publish">Pulish to Portfolio</button>
+      </form>
+    </div>
+  </main>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
